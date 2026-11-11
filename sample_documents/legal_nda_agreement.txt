@@ -1,0 +1,17 @@
+MUTUAL NON-DISCLOSURE AGREEMENT
+
+This Mutual Non-Disclosure Agreement (the "Agreement") is entered into as of 1 October 2026 by and between Solace Robotics Ltd., a company incorporated under the laws of England and Wales ("Party A"), and Kite Labs Inc., a Delaware corporation ("Party B").
+
+WHEREAS the parties wish to explore a potential business relationship and, in connection therewith, may disclose certain confidential information to one another;
+
+NOW, THEREFORE, the parties agree as follows:
+
+1. Confidential Information. "Confidential Information" means any non-public technical, financial or commercial information disclosed by one party (the "Disclosing Party") to the other (the "Receiving Party").
+
+2. Obligations. The Receiving Party shall hold the Confidential Information in strict confidence and shall not, without prior written consent, disclose it to any third party.
+
+3. Term and Termination. This Agreement shall remain in force for two (2) years. Either party may terminate on thirty (30) days written notice.
+
+4. Governing Law. This Agreement shall be governed by the laws of England and Wales, and the parties submit to the exclusive jurisdiction of its courts.
+
+IN WITNESS WHEREOF, the parties have caused this Agreement to be executed by their duly authorised representatives.

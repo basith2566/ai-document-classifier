@@ -1,0 +1,140 @@
+{
+  "trained_at": "2026-11-10T18:29:12+00:00",
+  "dataset_file": "training_data.csv",
+  "n_documents": 1050,
+  "n_train": 840,
+  "n_test": 210,
+  "class_counts": {
+    "Email": 150,
+    "Invoice": 150,
+    "Legal Document": 150,
+    "Other": 150,
+    "Report": 150,
+    "Research Paper": 150,
+    "Resume": 150
+  },
+  "labels": [
+    "Email",
+    "Invoice",
+    "Legal Document",
+    "Other",
+    "Report",
+    "Research Paper",
+    "Resume"
+  ],
+  "test_accuracy": 1.0,
+  "test_macro_f1": 1.0,
+  "cv_accuracy_mean": 1.0,
+  "cv_accuracy_std": 0.0,
+  "per_class": {
+    "Email": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30
+    },
+    "Invoice": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30
+    },
+    "Legal Document": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30
+    },
+    "Other": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30
+    },
+    "Report": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30
+    },
+    "Research Paper": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30
+    },
+    "Resume": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 30
+    }
+  },
+  "confusion_matrix": [
+    [
+      30,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      30,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      30,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      30,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      30,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      30,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      30
+    ]
+  ],
+  "sklearn_version": "1.9.1",
+  "note": "Metrics come from a held-out test split of the training dataset. If the dataset is synthetic, real-world accuracy will be lower."
+}

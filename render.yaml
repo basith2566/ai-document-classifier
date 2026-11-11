@@ -1,0 +1,27 @@
+# Render Blueprint: New + -> Blueprint -> pick this repo.
+# The persistent disk requires a paid instance type (Starter or higher).
+# On the free plan, delete the `disk:` block and set DATABASE_PATH to ./data/documents.db;
+# classification history is then lost whenever the service restarts or redeploys.
+services:
+  - type: web
+    name: doc-classifier-api
+    runtime: python
+    rootDir: backend
+    plan: starter
+    # Training at build time guarantees the saved model matches the installed scikit-learn version.
+    buildCommand: pip install -r requirements.txt && python -m ml.train
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    disk:
+      name: data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
+      - key: DATABASE_PATH
+        value: /var/data/documents.db
+      - key: CORS_ORIGINS
+        sync: false   # set in the Render dashboard to your Vercel URL, e.g. https://your-app.vercel.app
+      - key: CONFIDENCE_THRESHOLD
+        value: "0.45"
